@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/e-logo-transparent-png-20.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Add Expense</title>
+</head>
+
+<body>
+
+    <h2 id="h2"></h2>
+    <h4> <a href="./login.html">log out</a> </h4>
+    <h3 id="totalExpense"> </h3>
+    <form method="post" id="addExpForm">
+        <label for="addExpAmount">Amount: </label>
+        <input type="text" id="addExpAmount" name="amount" placeholder="enter amount here" required>
+        </br>
+        <label for="addExpdescription">description: </label>
+        <input type="text" id="addExpdescription" name="description" placeholder="enter description here" required>
+        </br>
+        <label for="addExpCatogary">catogary: </label>
+        <select id="addExpCatogary">
+            <option value="fuel"> fuel</option>
+            <option value="food"> food</option>
+            <option value="appliances"> appliances</option>
+            <option value="bill"> bill</option>
+            <option value="others"> others</option>
+        </select>
+        </br>
+        <button type="submit" id="addExpBtn">Add Expenses</button>
+    </form>
+    <button type="submit" id="premiumBtn">Get Premium</button>
+    <button type="submit" id="dltAcntBtn">Delete This Account</button>
+    <ul id="addExpLists"></ul>
+    <div id="exp-page">
+        <button id="prevBtn2" disabled>
+            <-prev </button>
+                <button id="curBtn2">1</button>
+                <button id="nextBtn2">next-></button>
+    </div>
+    <h3 id="rcntdwnld" style="display: none;">Recent download files.</h3>
+    <ul id="download-link"></ul>
+    <br>
+    <br>
+    <ol id="leader-board">
+    </ol>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script> -->
+    <script src="axios.js"></script>
+    <script src="addexpense.js"></script>
+
+</body>
+
+</html>
